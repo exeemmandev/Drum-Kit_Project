@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171a2b">
+  <title>Drum Kit | Play the Beat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <p class="eyebrow">INTERACTIVE MUSIC EXPERIENCE</p>
+      <h1 id="title">Drum <span>Kit</span> <span class="emoji" aria-hidden="true">🥁</span></h1>
+      <p class="subtitle">Tap a drum or press the matching key to play your beat.</p>
+    </header>
+
+    <section class="player" aria-label="Drum kit">
+      <div class="status"><span class="status-dot"></span><span id="statusText" aria-live="polite">Ready when you are</span></div>
+      <div class="set">
+        <button type="button" class="drum w" data-key="w" aria-label="Tom 1, key W"><span class="key">W</span><span class="drum-name">Tom 1</span></button>
+        <button type="button" class="drum a" data-key="a" aria-label="Tom 2, key A"><span class="key">A</span><span class="drum-name">Tom 2</span></button>
+        <button type="button" class="drum s" data-key="s" aria-label="Tom 3, key S"><span class="key">S</span><span class="drum-name">Tom 3</span></button>
+        <button type="button" class="drum d" data-key="d" aria-label="Tom 4, key D"><span class="key">D</span><span class="drum-name">Tom 4</span></button>
+        <button type="button" class="drum j" data-key="j" aria-label="Snare, key J"><span class="key">J</span><span class="drum-name">Snare</span></button>
+        <button type="button" class="drum k" data-key="k" aria-label="Crash cymbal, key K"><span class="key">K</span><span class="drum-name">Crash</span></button>
+        <button type="button" class="drum l" data-key="l" aria-label="Kick drum, key L"><span class="key">L</span><span class="drum-name">Kick</span></button>
+      </div>
+      <p class="hint"><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> <kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd> <span>on your keyboard</span></p>
+    </section>
+
+    <footer>Made for music lovers <span aria-hidden="true">·</span> Find your rhythm.</footer>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
